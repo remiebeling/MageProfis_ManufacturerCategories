@@ -20,10 +20,10 @@ Wenn das Herstellerlogo auf der Startseite angezeigt werden soll dann muss das A
 https://github.com/firegento/firegento-dynamiccategory 
 
 <p>
-1. dynamic categories modul installieren 
 ####Artikel dem Hersteller zuordnen
 
 <ol>
+<li>dynamic categories modul installieren </li>
 <li>den gewünschten Hersteller in der linken Spalte anklicken</li>
 das Tab “Artikel dieser Kategorie” wählen</li>
 <li>unter der Liste mit den Artikeln befindet sich das Feld “Dynamische Kategorie-Produkt Zuordnung”
