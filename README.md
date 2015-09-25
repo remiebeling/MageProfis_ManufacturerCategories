@@ -19,9 +19,6 @@ Wenn das Herstellerlogo auf der Startseite angezeigt werden soll dann muss das A
 
 https://github.com/firegento/firegento-dynamiccategory 
 
-<p>
-####Artikel dem Hersteller zuordnen
-
 <ol>
 <li>dynamic categories modul installieren </li>
 <li>den gewünschten Hersteller in der linken Spalte anklicken</li>
@@ -32,4 +29,4 @@ auf das Grüne kreuz klicken und aus dem Dropdown das Attribut “Hersteller” 
 <li>Nachdem die Kategorie gespeichert wurde werden nun Alle Artikel des gewählten Herstellers automatisch dieser Kategorie zugeordnet.</li>
 </ol>
 <strong>ACHTUNG: Das Artikelattribut “Hersteller” muss wie immer gepflegt werden damit diese Zuordnung korrekt funktionieren kann.</strong>
-</p>
+
