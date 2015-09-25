@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <cms_index_index>
+        <reference name="head">
+            <action method="addCss">
+                <name>css/manufacturers/manufacturers.css</name>
+            </action>
+            <!--<action method="addCss">
+                <name>css/manufacturers/owl.carousel.css</name>
+            </action>
+            <action method="addCss">
+                <name>css/manufacturers/owl.theme.css</name>
+            </action>
+            <action method="addCss">
+                <name>css/manufacturers/owl.transitions.css</name>
+            </action>
+            <action method="addItem">
+                <type>skin_js</type>
+                <name>js/manufacturers/owl/owl.carousel.min.js</name>
+            </action>-->
+        </reference>
+        <reference name="content">
+            <block type="manufacturercategories/homepage" name="manufacturers.home" template="page/homepage/manufacturers.phtml" />
+        </reference>
+    </cms_index_index>
+    
+    <catalog_product_view>
+        <reference name="product.info">
+            <block type="manufacturercategories/manufacturer" name="manufacturer.info" template="catalog/product/view/manufacturer.phtml">
+            </block>
+        </reference>
+    </catalog_product_view>
+</layout>

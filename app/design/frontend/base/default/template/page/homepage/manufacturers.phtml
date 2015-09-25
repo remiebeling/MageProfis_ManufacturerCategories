@@ -1,0 +1,37 @@
+<?php /* @var $this MageProfis_ManufacturerCategories_Block_Homepage */?>
+<?php $_manufacturers = $this->getManufacturers(); ?>
+<?php $_manufacturers_count = $this->getManufacturers()->count(); ?>
+
+<?php if($_manufacturers_count):?>
+<div class="section-title manufacturers-title"><?php echo Mage::getStoreConfig('manufacturercategories/homepage/heading'); ?></div>
+<div id="manufacturers">
+    <?php foreach($_manufacturers as $_manufacturer): ?>
+    <div class="manufacturer">
+        <a href="<?php echo $_manufacturer->getUrl(); ?>" title="<?php echo $_manufacturer->getName(); ?>">
+            <img src="<?php echo Mage::getUrl('media/catalog/category') . $_manufacturer->getImage(); ?>" alt="<?php echo $_manufacturer->getName(); ?>"/>
+        </a>
+    </div>
+    <?php endforeach; ?>
+</div>
+<?php endif; ?>
+<script type="text/javascript">
+    jQuery(document).ready(function () {
+        var topsellers = jQuery("#manufacturers");
+        topsellers.owlCarousel({
+            navigation: false, // Show next and prev buttons
+            slideSpeed: 300,
+            paginationSpeed: 400,
+            pagination: false,
+            items: 6
+        });
+        jQuery('.topsellers .owl-arrow').appendTo('.topsellers-slider');
+    });
+    jQuery('.topsellers  .owl-arrow').click(function () {
+        var owl = jQuery(".topsellers-slider").data('owlCarousel');
+        if (jQuery(this).hasClass('prev')) {
+            owl.prev();
+        } else if (jQuery(this).hasClass('next')) {
+            owl.next();
+        }
+    });
+</script>

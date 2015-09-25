@@ -1,0 +1,16 @@
+<?php /* @var $this MageProfis_ManufacturerCategories_Block_Manufacturer */ ?>
+<?php $_category = $this->getManufacturerCategory() ?>
+<?php if ($_category): ?>
+    <div class="manufacturer-info">
+        <?php if ($_category->getimage()): ?>
+            <div class="manufacurer-image">
+                <img src="<?php echo Mage::getUrl('media/catalog/category') . $_category->getimage(); ?>" />
+            </div>
+        <?php endif; ?>
+        <?php if ($_category->getDescription()): ?>
+            <div class="description-content std">
+                <?php echo $_category->getDescription(); ?>
+            </div>
+        <?php endif; ?>
+    </div>
+<?php endif; ?>

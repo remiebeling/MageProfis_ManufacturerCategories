@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <MageProfis_ManufacturerCategories>
+            <active>true</active>
+            <codePool>local</codePool>
+        </MageProfis_ManufacturerCategories>
+    </modules>
+</config>

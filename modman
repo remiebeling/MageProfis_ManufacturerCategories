@@ -1,0 +1,9 @@
+app/code/local/MageProfis/ManufacturerCategories                                        app/code/local/MageProfis/ManufacturerCategories
+app/design/frontend/base/default/layout/mageprofis-manufacturercategories.xml           app/design/frontend/base/default/layout/mageprofis-manufacturercategories.xml
+app/design/frontend/base/default/template/catalog/product/view/manufacturer.phtml       app/design/frontend/base/default/template/catalog/product/view/manufacturer.phtml
+app/design/frontend/base/default/template/page/homepage/manufacturers.phtml             app/design/frontend/base/default/template/page/homepage/manufacturers.phtml
+app/etc/modules/MageProfis_ManufacturerCategories.xml                                   app/etc/modules/MageProfis_ManufacturerCategories.xml
+app/locale/de_DE/MageProfis_ManufacturerCategories.csv                                  app/locale/de_DE/MageProfis_ManufacturerCategories.csv
+skin/frontend/base/default/images/manufacturers/                                        skin/frontend/base/default/images/manufacturers/
+skin/frontend/base/default/css/manufacturers/                                           skin/frontend/base/default/css/manufacturers/
+skin/frontend/base/default/js/manufacturers/                                            skin/frontend/base/default/js/manufacturers/
