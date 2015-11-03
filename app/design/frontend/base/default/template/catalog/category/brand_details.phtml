@@ -1,0 +1,22 @@
+<?php /* @var $this MageProfis_ManufacturerCategories_Block_Brand */ ?>
+<?php $_brand = Mage::registry('current_category'); ?>
+<?php if ($_brand): ?>
+    <div class="brand-details">
+        <?php if (fopen($this->getBrandBigImage(), 'r')): ?>
+            <img src="<?php echo $this->getBrandBigImage(); ?>" />
+        <?php endif; ?>
+        <?php if (fopen($this->getBrandLogo($_brand), 'r')): ?>
+            <img src="<?php echo $this->getBrandLogo($_brand); ?>" />
+        <?php endif; ?>    
+        <h1 class="brand-title">
+            <?php echo $this->getBrandTitle(); ?>
+        </h1>
+        <?php if ($_brand->getBrandLongDescription() != ""): ?>
+            <div class="brand-description std category-description">
+                <?php echo $_brand->getBrandLongDescription()?>
+            </div>
+        <?php endif; ?>
+    </div>
+<?php endif; ?>
+
+

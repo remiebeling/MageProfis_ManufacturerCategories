@@ -1,0 +1,17 @@
+<?php /* @var $this MageProfis_ManufacturerCategories_Block_productview */ ?>
+<?php $_brand = $this->getBrand() ?>
+<?php if ($_brand): ?>
+    <div class="manufacturer-info">
+        <?php if (fopen($this->getBrandLogo($_brand), 'r')): ?>
+            <div class="manufacurer-image">
+                <img src="<?php echo $this->getBrandLogo($_brand); ?>" />
+            </div>
+        <?php endif; ?>
+        <?php if ($_brand->getBrandShortDescription() != ""): ?>
+            <div class="description-content std">
+                <?php echo $_brand->getBrandShortDescription(); ?>
+            </div>
+        <?php endif; ?>
+        <a href="<?php echo $_brand->getUrl(); ?>" class="brand-link"><?php echo $this->__('more %s items', $_brand->getName())?></a>
+    </div>
+<?php endif; ?>

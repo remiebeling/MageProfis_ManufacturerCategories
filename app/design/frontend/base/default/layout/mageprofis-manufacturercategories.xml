@@ -26,8 +26,30 @@
     
     <catalog_product_view>
         <reference name="product.info">
-            <block type="manufacturercategories/manufacturer" name="manufacturer.info" template="catalog/product/view/manufacturer.phtml">
+            <block type="manufacturercategories/productview" name="manufacturer.info" template="catalog/product/view/brand.phtml">
             </block>
         </reference>
     </catalog_product_view>
+    
+    <catalog_category_default>
+        <update handle="all_brands_view" />
+        <update handle="single_brand_view" />
+    </catalog_category_default>
+    
+    <catalog_category_layered>
+        <update handle="all_brands_view" />
+        <update handle="single_brand_view" />
+    </catalog_category_layered>
+    
+    <all_brands_view>
+        <reference name="category.products">
+            <block type="manufacturercategories/brands" name="all.brands" template="catalog/category/brands.phtml" />
+        </reference>
+    </all_brands_view>
+    
+    <single_brand_view>
+        <reference name="category.products">
+            <block type="manufacturercategories/brand" name="brand.details" template="catalog/category/brand_details.phtml" />
+        </reference>
+    </single_brand_view>
 </layout>
