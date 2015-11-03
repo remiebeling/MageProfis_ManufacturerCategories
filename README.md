@@ -15,6 +15,22 @@ Der Kategoriename entspricht dem Herstellernamen.<br />
 Wenn das Herstellerlogo auf der Startseite angezeigt werden soll dann muss das Attribut “Hersteller auf Startseite anzeigen” auf “ja” gesetzt werden.
 </p>
 
+-- catalog/category/view.phtml
+
+<pre>
+<?php if (Mage::helper('manufacturercategories')->isAllManufacturersCategory($_category->getId())): ?>
+    <?php echo $this->getChildHtml('all.brands'); ?>
+<?php elseif ($_category->getIsBrand()): ?>
+    <?php echo $this->getChildHtml('brand.details'); ?>
+    <?php echo $this->getCmsBlockHtml() ?>
+    <?php echo $this->getProductListHtml() ?>
+    <?php echo $this->getChildHtml('brands.bar'); ?>
+<?php else: ?>
+
+/*Here is the usual category view logic*/
+<?php endif; ?>
+</pre>
+
 ###Mit Firegento dynamic Cateogries (empfohlen)
 
 https://github.com/firegento/firegento-dynamiccategory 
