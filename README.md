@@ -16,6 +16,7 @@ Wenn das Herstellerlogo auf der Startseite angezeigt werden soll dann muss das A
 </p>
 
 -- catalog/category/view.phtml
+<pre>
 
 <?php if (Mage::helper('manufacturercategories')->isAllManufacturersCategory($_category->getId())): ?>
     <?php echo $this->getChildHtml('all.brands'); ?>
@@ -29,6 +30,7 @@ Wenn das Herstellerlogo auf der Startseite angezeigt werden soll dann muss das A
 /*Here is the usual category view logic*/
 <?php endif; ?>
 
+</pre>
 ###Mit Firegento dynamic Cateogries (empfohlen)
 
 https://github.com/firegento/firegento-dynamiccategory 
