@@ -12,7 +12,7 @@ class MageProfis_ManufacturerCategories_Block_Brands extends MageProfis_Manufact
             $collection = Mage::getModel('catalog/category')->getCollection()
                     ->addAttributeToFilter('parent_id', $this->getManufacturerCategoryId())
                     ->addAttributeToSort('position', 'asc')
-                    ->addAttributeToFilter('brand_home', 1)
+                    //->addAttributeToFilter('brand_home', 1)
                     ->addAttributeToSelect('*')
                     ->addStoreFilter();
 

@@ -4,10 +4,6 @@
         <MageProfis_ManufacturerCategories>
             <version>1.0.0.0</version>
         </MageProfis_ManufacturerCategories>
-        <translations>
-            <active>true</active>
-            <codepool>local</codepool>
-        </translations>
     </modules>
     <global>
         <blocks>
