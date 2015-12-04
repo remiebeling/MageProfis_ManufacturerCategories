@@ -44,8 +44,8 @@ class MageProfis_ManufacturerCategories_Block_Homepage extends MageProfis_Manufa
                     ->addAttributeToFilter('parent_id', $this->getManufacturerCategoryId())
                     ->addAttributeToFilter('brand_logo', array('notnull' => true))
                     ->addAttributeToSort('position', 'asc')
-                    ->addAttributeToSelect('*')
-                    ->addStoreFilter();
+                    ->addAttributeToSelect('*');
+                    //->addStoreFilter();
 
             $this->_manufacturers = $collection;
         }

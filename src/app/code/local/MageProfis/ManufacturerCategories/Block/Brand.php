@@ -18,8 +18,13 @@ class MageProfis_ManufacturerCategories_Block_Brand extends MageProfis_Manufactu
     {
         if(is_null($this->_brand_big_image))
         {
-            $brand_image = Mage::getUrl('media/catalog/category') . $this->getCurrentBrand()->getBrandPageImage();
-            $this->_brand_big_image = $brand_image;
+            $image = 'catalog/category/' . $this->getCurrentBrand()->getBrandPageImage();
+            if (file_exists(Mage::getBaseDir('media') . $image))
+            {
+                $this->_brand_big_image = Mage::getBaseUrl('media') . $image;
+            } else {
+                $this->_brand_big_image = false;
+            }
         }
         return $this->_brand_big_image;
     }

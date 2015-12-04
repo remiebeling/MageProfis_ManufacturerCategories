@@ -2,10 +2,11 @@
 <?php $_brand = Mage::registry('current_category'); ?>
 <?php if ($_brand): ?>
     <div class="brand-details">
-        <?php if (fopen($this->getBrandBigImage(), 'r')): ?>
+        
+        <?php if ($this->getBrandBigImage()): ?>
             <img src="<?php echo $this->getBrandBigImage(); ?>" />
         <?php endif; ?>
-        <?php if (fopen($this->getBrandLogo($_brand), 'r')): ?>
+        <?php if ($this->getBrandLogo($_brand)): ?>
             <img src="<?php echo $this->getBrandLogo($_brand); ?>" />
         <?php endif; ?>    
         <h1 class="brand-title">

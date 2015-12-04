@@ -5,7 +5,7 @@
             <action method="addCss">
                 <name>css/manufacturers/manufacturers.css</name>
             </action>
-            <!--<action method="addCss">
+            <action method="addCss">
                 <name>css/manufacturers/owl.carousel.css</name>
             </action>
             <action method="addCss">
@@ -17,7 +17,7 @@
             <action method="addItem">
                 <type>skin_js</type>
                 <name>js/manufacturers/owl/owl.carousel.min.js</name>
-            </action>-->
+            </action>
         </reference>
         <reference name="content">
             <block type="manufacturercategories/homepage" name="manufacturers.home" template="page/homepage/manufacturers.phtml" />

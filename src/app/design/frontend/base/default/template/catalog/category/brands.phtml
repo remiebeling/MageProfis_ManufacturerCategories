@@ -6,7 +6,6 @@
 <?php if ($brandscount > 0): ?>
     <div class="all-brands-list row">
         <?php foreach ($this->getManufacturers() as $_brand): ?>
-            <?php //Zend_Debug::dump($_brand->getData()); ?>
             <div class="brand col-xs-2">
                 <a href="<?php echo $_brand->getUrl() ?>" title="<?php echo $_brand->getName() ?>">
                     <?php if ($_brand->getBrandLogo() != ""): ?>

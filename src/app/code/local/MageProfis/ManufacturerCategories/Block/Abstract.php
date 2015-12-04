@@ -44,6 +44,7 @@ class MageProfis_ManufacturerCategories_Block_Abstract extends Mage_Core_Block_T
     
     public function getBrandLogo($brand)
     {
+        //Zend_Debug::dump($brand->getData());
         return Mage::getUrl('media/catalog/category') . $brand->getBrandLogo();
     }
 
