@@ -1,0 +1,21 @@
+{
+  "name": "mageprofis/manufacturercategories",
+  "license": "GPL-3.0",
+  "type": "magento-module",
+  "description": "Manage Manufacturer Logos and Pages via Categories",
+  "homepage": "https://github.com/remiebeling/MageProfis_ManufacturerCategories",
+  "require": {
+    "php": ">=5.3"
+  },
+  "suggest": {
+    "magento-hackathon/magento-composer-installer": "*"
+  },
+  "authors": [
+    {
+      "name": "Remi Ebeling",
+      "email": "remi@mage-profis.de",
+      "role": "Author/Maintainer"
+    }
+  ]
+}
+ 
