@@ -6,6 +6,3 @@ src/app/design/frontend/base/default/template/catalog/category/brand_details.pht
 src/app/design/frontend/base/default/template/page/homepage/manufacturers.phtml             app/design/frontend/base/default/template/page/homepage/manufacturers.phtml
 src/app/etc/modules/MageProfis_ManufacturerCategories.xml                                   app/etc/modules/MageProfis_ManufacturerCategories.xml
 src/app/locale/de_DE/MageProfis_ManufacturerCategories.csv                                  app/locale/de_DE/MageProfis_ManufacturerCategories.csv
-src/skin/frontend/base/default/images/manufacturers/                                        skin/frontend/base/default/images/manufacturers/
-src/skin/frontend/base/default/css/manufacturers/                                           skin/frontend/base/default/css/manufacturers/
-src/skin/frontend/base/default/js/manufacturers/                                            skin/frontend/base/default/js/manufacturers/
