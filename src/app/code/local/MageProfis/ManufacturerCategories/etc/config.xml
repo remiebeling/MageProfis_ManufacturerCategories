@@ -29,16 +29,18 @@
                 </setup>
             </manufacturercategories_setup>
         </resources>
+        <events>
+            <core_layout_update_updates_get_after>
+                <observers>
+                    <mageprofis_manufacturercategories_add_layout_updates>
+                        <type>singleton</type>
+                        <class>manufacturercategories/observer</class>
+                        <method>addLayoutXml</method>
+                    </mageprofis_manufacturercategories_add_layout_updates>
+                </observers>
+            </core_layout_update_updates_get_after>
+        </events>
     </global>
-    <frontend>
-        <layout>
-            <updates>
-                <manufacturercategories>
-                    <file>mageprofis-manufacturercategories.xml</file>
-                </manufacturercategories>
-            </updates>
-        </layout>
-    </frontend>
     <adminhtml>
         <acl>
             <resources>
